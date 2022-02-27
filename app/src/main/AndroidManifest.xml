@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3">
         <activity
+            android:name=".RecomendationActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeveloperActivity"
             android:exported="false" />
         <activity

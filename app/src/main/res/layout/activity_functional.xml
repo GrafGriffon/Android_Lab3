@@ -68,7 +68,7 @@
         android:layout_height="192dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="124dp"
-        android:onClick="toPager"
+        android:onClick="toSmile1"
         app:layout_constraintBottom_toTopOf="@+id/buttonInfo"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/e1" />
@@ -78,6 +78,7 @@
         android:layout_width="180dp"
         android:layout_height="201dp"
         android:layout_marginStart="20dp"
+        android:onClick="toSmile2"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/e2" />
@@ -86,6 +87,7 @@
         android:id="@+id/imageView6"
         android:layout_width="192dp"
         android:layout_height="182dp"
+        android:onClick="toSmile3"
         android:layout_marginBottom="128dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonHoroscope"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -93,6 +95,7 @@
 
     <ImageView
         android:id="@+id/imageView9"
+        android:onClick="toSmile4"
         android:layout_width="178dp"
         android:layout_height="194dp"
         android:layout_marginStart="8dp"
