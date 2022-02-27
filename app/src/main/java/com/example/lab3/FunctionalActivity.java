@@ -70,4 +70,9 @@ public class FunctionalActivity extends AppCompatActivity {
         intent.putExtra("description", "Так держать, вам все горы по колено, слушайне много музыки и получайте удовольствие от жизни");
         startActivity(intent);
     }
+
+    public void toHoroscop(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
+    }
 }

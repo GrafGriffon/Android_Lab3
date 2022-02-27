@@ -24,6 +24,7 @@
         android:layout_width="195dp"
         android:layout_height="49dp"
         android:text="horoscope"
+        android:onClick="toHoroscop"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.961"
