@@ -3,6 +3,7 @@ package com.example.lab3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -10,9 +11,12 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.io.IOException;
+
 public class FunctionalActivity extends AppCompatActivity {
 
     FirebaseUser currentUser;
+    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,9 @@ public class FunctionalActivity extends AppCompatActivity {
         Bundle arguments = getIntent().getExtras();
         currentUser = (FirebaseUser) arguments.get("current_user");
         setContentView(R.layout.activity_functional);
+        player = MediaPlayer.create(this, R.raw.jabo);
+        player.setLooping(true); // зацикливаем
+        player.start();
     }
 
 
